@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>天明话术系统</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            background: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            text-align: center;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card h2 {
+            color: #4a6fa5;
+            margin-bottom: 15px;
+        }
+        .card p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .btn {
+            display: inline-block;
+            background: #4a6fa5;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #3a5a8c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>天明话术系统</h1>
+            <p>专业客服解决方案与话术库此话术来自天明总结</p>
+            <p>跑分客服项目</p>
+        </header>
+        
+        <div class="card-container">
+            <div class="card">
+                <h2>新增话术</h2>
+                <p>如何切客户 如何聊天 如何证明</p>
+                <a href="add_words.html" class="btn">进入</a>
+            </div>
+            
+            <div class="card">
+                <h2>客户资料</h2>
+                <p>老鼠 薅羊毛 垃圾 </p>
+                <a href="customer_data.html" class="btn">进入</a>
+            </div>
+           
+            <div class="card">
+                <h2>相册</h2>
+                <p>Photo album speech </p>
+                <a href="customer_data.html" class="btn">进入</a>
+            </div>
+
+            <div class="card">
+                <h2>客服登记</h2>
+                <p>登记流程 啦客户进群 注册小程序 </p>
+                <a href="customer_data.html" class="btn">进入</a>
+            </div>
+            
+            <div class="card">
+                <h2>试单话术</h2>
+                <p>如何试单 让客户明白促销订单大中小</p>
+                <a href="trial_words.html" class="btn">进入</a>
+            </div>
+            
+            <div class="card">
+                <h2>聊天话术</h2>
+                <p>日常沟通与问题解答话术</p>
+                <a href="chat_words.html" class="btn">进入</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
