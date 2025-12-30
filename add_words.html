@@ -3,96 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>客户资料 - 天明话术系统</title>
+    <title>新增话术 - 天明话术系统</title>
     <style>
         /* 共用样式省略 */
-        .customer-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
+        .form-container {
             background: white;
             border-radius: 10px;
-            overflow: hidden;
+            padding: 30px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
-        .customer-table th, .customer-table td {
-            padding: 12px 15px;
-            text-align: left;
-            border-bottom: 1px solid #eee;
-        }
-        .customer-table th {
-            background: #4a6fa5;
-            color: white;
-        }
-        .customer-table tr:hover {
-            background: #f0f7ff;
-        }
-        .search-box {
+        .form-group {
             margin-bottom: 20px;
-            display: flex;
         }
-        .search-box input {
-            flex: 1;
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        input, textarea, select {
+            width: 100%;
             padding: 10px;
             border: 1px solid #ddd;
-            border-radius: 5px 0 0 5px;
+            border-radius: 5px;
+            font-family: inherit;
         }
-        .search-box button {
+        textarea {
+            height: 150px;
+            resize: vertical;
+        }
+        .submit-btn {
             background: #4a6fa5;
             color: white;
             border: none;
-            padding: 0 15px;
-            border-radius: 0 5px 5px 0;
+            padding: 12px 25px;
+            border-radius: 5px;
             cursor: pointer;
+            font-size: 16px;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>客户资料管理</h1>
-            <p>查看和管理您的客户信息</p>
+            <h1>新增话术</h1>
+            <p>添加新的话术到系统中</p>
         </header>
         
-        <div class="search-box">
-            <input type="text" placeholder="搜索客户姓名或电话...">
-            <button>搜索</button>
+        <div class="form-container">
+            <form>
+                <div class="form-group">
+                    <label for="title">话术标题</label>
+                    <input type="text" id="title" placeholder="例如：产品介绍开场白">
+                </div>
+                
+                <div class="form-group">
+                    <label for="category">话术分类</label>
+                    <select id="category">
+                        <option value="greeting">欢迎话术</option>
+                        <option value="introduction">产品介绍</option>
+                        <option value="objection">异议处理</option>
+                        <option value="close">成交促成</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="content">话术内容</label>
+                    <textarea id="content" placeholder="请输入详细的话术内容..."></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">提交话术</button>
+            </form>
         </div>
-        
-        <table class="customer-table">
-            <thead>
-                <tr>
-                    <th>客户姓名</th>
-                    <th>联系电话</th>
-                    <th>上次联系</th>
-                    <th>客户等级</th>
-                    <th>操作</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>药剂先生</td>
-                    <td>138****1234</td>
-                    <td>2023-10-15</td>
-                    <td>VIP客户</td>
-                    <td><a href="#">查看</a></td>
-                </tr>
-                <tr>
-                    <td>李老黑</td>
-                    <td>159****5678</td>
-                    <td>2023-10-10</td>
-                    <td>普通客户</td>
-                    <td><a href="#">查看</a></td>
-                </tr>
-                <tr>
-                    <td>王德留</td>
-                    <td>186****9012</td>
-                    <td>2023-10-05</td>
-                    <td>潜在客户</td>
-                    <td><a href="#">查看</a></td>
-                </tr>
-            </tbody>
-        </table>
     </div>
 </body>
 </html>
