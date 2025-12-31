@@ -85,17 +85,6 @@
             object-fit: cover;
         }
         
-        .photo-placeholder {
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(135deg, #e9ecef 0%, #dee2e6 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #6c757d;
-            font-size: 16px;
-        }
-        
         .id-card {
             background: white;
             border-radius: 10px;
@@ -174,65 +163,6 @@
             font-size: 1.1em;
         }
         
-        /* 工作经验部分 */
-        .experience-section {
-            background: #f8fafc;
-            padding: 30px;
-            border-top: 2px solid #e9ecef;
-        }
-        
-        .experience-section h3 {
-            color: #1a3a8f;
-            margin-bottom: 20px;
-        }
-        
-        .experience-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-        
-        .exp-card {
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-        }
-        
-        .exp-card h4 {
-            color: #1a3a8f;
-            margin-bottom: 10px;
-        }
-        
-        .exp-card ul {
-            padding-left: 20px;
-        }
-        
-        .exp-card li {
-            margin-bottom: 5px;
-        }
-        
-        /* 联系方式 */
-        .contact-section {
-            padding: 30px;
-            background: white;
-            border-top: 2px solid #e9ecef;
-        }
-        
-        .contact-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
-        }
-        
-        .contact-item {
-            text-align: center;
-            padding: 20px;
-            background: #f8fafc;
-            border-radius: 8px;
-        }
-        
         /* 官方印章 */
         .official-stamp {
             text-align: center;
@@ -272,8 +202,10 @@
                 <!-- 证件照片区域 -->
                 <div class="id-photo-section">
                     <div class="id-photo-frame">
-                        <!-- 已替换为实际照片 -->
-                        
+                        <!-- 使用绝对URL路径确保照片显示 -->
+                        <img src="https://doudiannm-spec.github.io/wangshirong.jpg" 
+                             alt="王诗蓉专业客服代理照片"
+                             style="width:100%; height:100%; object-fit:cover;">
                     </div>
                     <h3>王诗蓉</h3>
                     <p style="color: #666; font-size: 1.1em;">专业客服代理</p>
@@ -302,7 +234,7 @@
                         <div class="info-value">22010619910826862X</div>
                     </div>
                     <div class="info-item">
-                        <div class="info-label">住1址</div>
+                        <div class="info-label">住址</div>
                         <div class="info-value">长春市绿园区东风街道锦新委71组</div>
                     </div>
                 </div>
@@ -357,68 +289,9 @@
             </div>
         </div>
         
-        <!-- 工作经验部分 -->
-        <div class="experience-section">
-            <h3>专业工作经历与技能</h3>
-            <div class="experience-content">
-                <div class="exp-card">
-                    <h4>工作经验</h4>
-                    <ul>
-                        <li>1年专业客服经验（2024年至今）</li>
-                        <li>累计服务客户超过3000+</li>
-                        <li>客户满意度持续保持在98%以上</li>
-                        <li>培养专业客服人才50余人</li>
-                    </ul>
-                </div>
-                
-                <div class="exp-card">
-                    <h4>专业技能</h4>
-                    <ul>
-                        <li>客户关系维护与管理</li>
-                        <li>投诉处理与纠纷调解</li>
-                        <li>售后服务优化</li>
-                        <li>客户满意度提升</li>
-                        <li>团队管理与培训</li>
-                    </ul>
-                </div>
-                
-                <div class="exp-card">
-                    <h4>专业荣誉</h4>
-                    <ul>
-                        <li>连续10年荣获"优秀客服代理"称号</li>
-                        <li>年度客户满意度99.2%纪录保持者</li>
-                        <li>部门业绩连续8年排名第一</li>
-                        <li>2019年度"最佳服务之星"</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        
-        <!-- 联系方式 -->
-        <div class="contact-section">
-            <h3>联系方式</h3>
-            <div class="contact-grid">
-                <div class="contact-item">
-                    <h4>工作咨询</h4>
-                    <p>📱📱 138-XXXX-XXXX</p>
-                    <p>工作时间：工作日 9:00-18:00</p>
-                </div>
-                <div class="contact-item">
-                    <h4>紧急联系</h4>
-                    <p>📞📞 24小时紧急服务热线</p>
-                    <p>特殊情况随时响应</p>
-                </div>
-                <div class="contact-item">
-                    <h4>邮件联系</h4>
-                    <p>✉✉️ wangshirong@example.com</p>
-                    <p>24小时内回复</p>
-                </div>
-            </div>
-        </div>
-        
         <!-- 官方印章 -->
         <div class="official-stamp">
-            <p class="stamp-text">本信息已通过官方资质认证，真实有效 | 最后更新：2024年1月</p>
+            <p class="stamp-text">本信息已通过官方资质认证，真实有效</p>
         </div>
     </div>
 </body>
